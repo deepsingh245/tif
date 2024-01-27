@@ -7,12 +7,15 @@ const UserSchema = new mongoose.Schema({
   },
   community: {
     type: String,
+    required: true,
   },
   user: {
     type: String,
+    required: true,
   },
   role: {
     type: String,
+    required: true,
   },
   created_at: {
     type: Date,
@@ -20,5 +23,5 @@ const UserSchema = new mongoose.Schema({
   },
 });
 
-const newUser = mongoose.model("role", UserSchema, "role");
+const newUser = mongoose.model("member", UserSchema, "member");
 module.exports = newUser;

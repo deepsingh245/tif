@@ -8,7 +8,7 @@ app.use(express.json());
 app.use("/v1", require("./routes/user/userCreate"));
 app.use("/v1", require("./routes/community/communityCreate"));
 app.use("/v1", require("./routes/role/roleCreate"));
-// app.use("/v1",require('./routes/user/profile'))
+app.use("/v1", require("./routes/member/memberCreate"));
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
