@@ -9,6 +9,7 @@ app.use("/v1", require("./routes/user/userCreate"));
 app.use("/v1", require("./routes/community/communityCreate"));
 app.use("/v1", require("./routes/role/roleCreate"));
 app.use("/v1", require("./routes/member/memberCreate"));
+app.use("/v1", require("./routes/member/allmembers"));
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
