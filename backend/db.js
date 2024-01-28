@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
-const MongoURI =
-  "mongodb+srv://tif:tif123456@cluster0.r1pfpq2.mongodb.net/tif?retryWrites=true&w=majority";
+const MongoURI =;
 
 const mongoDB = () => {
  try{ mongoose
